@@ -1,28 +1,22 @@
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds space between icon and text */
+}
 
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-.parent{
-    font-size: 1.5rem;
-    width: 40%;
-    height: 28%;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    /* top:-50px; */
+.name p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2px;
 }
-.name > p{
-font-size: 2rem;
-}
-.name :nth-child(2){
-    font-size: 1.4rem;
-}
-.name{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.components{
-    display: flex;
-    justify-content: space-between;
+
+.name p:last-child {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
