@@ -1,0 +1,28 @@
+
+
+.parent{
+    font-size: 1.5rem;
+    width: 40%;
+    height: 28%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    /* top:-50px; */
+}
+.name > p{
+font-size: 2rem;
+}
+.name :nth-child(2){
+    font-size: 1.4rem;
+}
+.name{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.components{
+    display: flex;
+    justify-content: space-between;
+}
