@@ -17,18 +17,18 @@ body {
 
 /* 2. Organized Main Container */
 .container {
-  width: 90%;
-  max-width: 500px;
-  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  width: 95%; /* Takes up most of the screen on mobile */
+  min-width: 60vw; /* Forces it to be at least 60% of the screen width on desktop */
+  max-width: 900px; /* Allows it to grow much wider before stopping */
+  background: rgba(255, 255, 255, 0.1); 
   border-radius: 20px;
-  padding: 30px;
+  padding: 40px; /* Increased padding so the inside doesn't feel cramped */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  margin: 40px 0;
+  margin: 40px auto; /* 'auto' ensures it stays perfectly centered */
   display: flex;
   flex-direction: column;
 }
-
 /* Welcome Screen */
 .welcome-screen {
   text-align: center;
@@ -138,6 +138,7 @@ input:hover {
   gap: 12px;
   overflow-x: auto;
   padding-bottom: 10px;
+  justify-content: center;
 }
 .forecast-scroll::-webkit-scrollbar {
   height: 6px;
